@@ -29,7 +29,18 @@
             justify-items: center;
             margin: 0px auto;
         }
-        
+        @media (max-width: 768px) {
+    .social {
+        display: grid;
+        grid-template-columns: repeat(3, 0.3fr); /* Four columns */
+        padding-top: 4%;
+            justify-content: center;
+            justify-items: center;
+            margin: 0px auto;
+            max-width: 600px; /* Optional max width */
+    }
+}
+
         #social-links{
             transition: transform 0.5s ease;
         }
