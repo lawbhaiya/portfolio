@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            overflow: hidden; /* Prevents scrollbars */
+           background-color:black;
+        }
+        img{
+            height: 80px;
+            width: 80px;
+        }
+        .social{
+            /* display: flex;
+            justify-content: center;
+            gap: 20px; */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four columns */
+            gap: 22px; /* Space between icons */
+            max-width: 600px; /* Optional max width */
+            padding-top: 4%;
+            justify-content: center;
+            justify-items: center;
+            margin: 0px auto;
+        }
+        
+        #social-links{
+            transition: transform 0.5s ease;
+        }
+       .social a:hover{
+        transform: translateY(-10px); /* Move up by 10 pixels on hover */
+        transition: transform 0.5s ease;
+       }
+       h1{
+        color:red;
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-size: 70px;
+        font-family: 'Minecraft', sans-serif;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+       margin-top: 120px;
+       }
+
+    </style>
+
+
+<h1> LAWBHAI</h1>
+
+    <div class="social">
+    <a><img src="instagram_dark.svg" alt="instagram" height="70px" width="70px"></a>
+    <a href=""><img src="youtube.svg" alt="yt" id="social-links"></a>
+    <a href=""><img src="spotify.svg" alt="spotify" id="social-links"></a>
+    <a href=""><img src="reddit.svg" alt="reddit" id="social-links"></a>
+    <a href=""><img src="steam.svg" alt="steam"></a>
+    <a href=""><img src="mastodon.svg" alt="mastodon" id="social-links"></a>
+    <a href=""><img src="telegram.svg" alt="tg" id="social-links"></a>
+    <a href=""><img src="discord.svg" alt="discord"></a>
+    
+    </div>
+    
+    <!-- <script>
+        const logos = document.querySelectorAll('#social-links');
+        function randomPosition() {
+    logos.forEach(logo => {
+        // Get the dimensions of the logo
+        const logoWidth = logo.clientWidth;
+        const logoHeight = logo.clientHeight;
+
+        // Generate random positions within the viewport
+        const x = Math.random() * (window.innerWidth - logoWidth);
+        const y = Math.random() * (window.innerHeight - logoHeight);
+        
+        // Apply the new position using transform
+        logo.style.transform = `translate(${x}px, ${y}px)`;
+    });
+}
+
+// Move logos every 2 seconds
+setInterval(randomPosition, 2000);
+        </script> -->
+
+
+
+</body>
+</html>
